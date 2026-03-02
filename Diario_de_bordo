@@ -1,0 +1,4 @@
+02/03 
+Criei VPC, subnet public, subnet privada, internet gateway e route table via código, fiz a alteração para 0.0.0.0/0 para dar acesso à internet (havia esquecido disso)
+Rodei tudo, bati na aws e deu certo.
+
