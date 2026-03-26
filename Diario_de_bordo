@@ -1,4 +1,6 @@
-02/03 
+02/03
 Criei VPC, subnet public, subnet privada, internet gateway e route table via código, fiz a alteração para 0.0.0.0/0 para dar acesso à internet (havia esquecido disso)
 Rodei tudo, bati na aws e deu certo.
 
+04/03
+Criei dois ingress, um para acesso publico e um para manutencao, egress para update de atualizacao, isso claro dentro do security group. Criei tambem uma instnacia ec2 com imagem xginx e coloquei tudo pra rodar

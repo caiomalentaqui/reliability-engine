@@ -13,7 +13,7 @@ variable "instance_tenancy" {
 variable "tags" {
   description = "Tags to apply to all resources"
   type        = map(string)
-  default     = {
+  default = {
     Name        = "reliability-engine-vpc"
     Environment = "dev"
     Project     = "engine-sre"
@@ -134,4 +134,32 @@ variable "web_instance_name" {
   description = "Name tag for the web instance"
   type        = string
   default     = "reliability-web-server"
+}
+
+variable "public_subnet_1_cidr" {
+  description = "CIDR da primeira subnet pública"
+  type        = string
+  default     = "10.0.1.0/24"
+}
+
+variable "public_subnet_2_cidr" {
+  description = "CIDR da segunda subnet pública"
+  type        = string
+  default     = "10.0.2.0/24"
+}
+
+variable "az_1" {
+  type    = string
+  default = "us-east-1a"
+}
+
+variable "az_2" {
+  type    = string
+  default = "us-east-1b"
+}
+
+variable "project_name" {
+  description = "Name of the project"
+  type        = string
+  default     = "reliability-engine"
 }
