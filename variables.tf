@@ -21,29 +21,29 @@ variable "tags" {
   }
 }
 
-variable "public_subnet_cidr" {
-  description = "CIDR block for the public subnet"
-  type        = string
-  default     = "10.0.1.0/24"
-}
+# variable "public_subnet_cidr" {
+#   description = "CIDR block for the public subnet"
+#   type        = string
+#   default     = "10.0.1.0/24"
+# }
 
-variable "public_subnet_name" {
-  description = "Name tag for the public subnet"
-  type        = string
-  default     = "Public subnet for us-east-2"
-}
+# variable "public_subnet_name" {
+#   description = "Name tag for the public subnet"
+#   type        = string
+#   default     = "Public subnet for us-east-2"
+# }
 
-variable "private_subnet_cidr" {
-  description = "CIDR block for the private subnet"
-  type        = string
-  default     = "10.0.2.0/24"
-}
+# variable "private_subnet_cidr" {
+#   description = "CIDR block for the private subnet"
+#   type        = string
+#   default     = "10.0.2.0/24"
+# }
 
-variable "private_subnet_name" {
-  description = "Name tag for the private subnet"
-  type        = string
-  default     = "Private subnet for us-east-2"
-}
+# variable "private_subnet_name" {
+#   description = "Name tag for the private subnet"
+#   type        = string
+#   default     = "Private subnet for us-east-2"
+# }
 
 variable "igw_name" {
   description = "Name tag for the internet gateway"
