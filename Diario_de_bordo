@@ -4,3 +4,7 @@ Rodei tudo, bati na aws e deu certo.
 
 04/03
 Criei dois ingress, um para acesso publico e um para manutencao, egress para update de atualizacao, isso claro dentro do security group. Criei tambem uma instnacia ec2 com imagem xginx e coloquei tudo pra rodar
+
+Esqueci de documentar alguns dias...
+
+13/4 Substitui a referencia da criação de uma instancia da forma mais cria e pura e nao profissional nem produtiva, deixei o template funcional afim de que fosse uma questao de apenas trocar a referencia do atributo, seja nome, seja id da imagem. Definimos o ASG para que ele controle a quantia de instancias que devem existir baseada em parametros minimo, desejavel e max.
