@@ -175,3 +175,15 @@ variable "project_name" {
   type        = string
   default     = "reliability-engine"
 }
+
+variable "region" {
+  description = "AWS region to deploy resources"
+  type        = string
+  default     = "us-east-1"
+}
+
+variable "cpu_target_value" {
+  description = "Percentual de CPU para disparar o escalonamento"
+  type        = number
+  default     = 50.0
+}

@@ -39,8 +39,8 @@ resource "aws_autoscaling_group" "app_asg" {
 }
 
 resource "aws_autoscaling_policy" "cpu_scaling" {
-  name                   = "cpu-target-tracking"
-  autoscaling_group_name = aws_autoscaling_group.app_asg.name # Conecta ao seu ASG
+  name                   = "${var.project_name}-cpu-policy"
+  autoscaling_group_name = aws_autoscaling_group.app_asg.name
   policy_type            = "TargetTrackingScaling"
 
   target_tracking_configuration {
@@ -48,6 +48,6 @@ resource "aws_autoscaling_policy" "cpu_scaling" {
       predefined_metric_type = "ASGAverageCPUUtilization"
     }
 
-    target_value = 30.0
+    target_value = var.cpu_target_value
   }
 }
